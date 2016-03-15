@@ -1,0 +1,502 @@
+/*
+Theme Name: Covered
+Theme URI: http://coveredit.com
+Description: A clean landing page for the Covered App team.
+Author: Peter Laxalt
+Author URI: http://laxaltandmciver.co
+Version: 0.1
+Tags: landing page, app, insurance, clean, green, illustrative, pitch, investors, deck, custom
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> basic stuff ============================================== */
+/* ============================================================================================ */
+
+* {
+	padding:0;
+	margin:0;
+}
+
+html {
+	overflow-y: auto !important;
+  overflow-x: hidden;
+}
+
+body {
+	background-color: #ffffff;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	word-wrap: break-word;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> text styling ============================================== */
+/* ============================================================================================ */
+
+.tagline {
+  font-weight:100;
+  font-size: 35pt;
+  color:#5ec2a5;
+}
+
+.section-header {
+  font-weight:100;
+  font-size: 35pt;
+  color:#fff;
+}
+
+* ============================================================================================ */
+/* >>>>>>>>>>>>> general styling ============================================== */
+/* ============================================================================================ */
+
+.right {
+	float: right;
+}
+
+.diagram-holder {
+	text-align: center;
+}
+
+.mobile-show {
+	display:none;
+}
+.mobile-hide {
+	display:block;
+}
+
+@media (max-width:767px){
+	 .mobile-show {
+		 display:block;
+	 }
+	 .mobile-hide {
+		 display:none;
+	 }
+	 .diagram-holder {
+	 	text-align: left;
+	 }
+	 .diagram-bump {
+		 margin-bottom:20px;
+	 }
+ }
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> section 1 ============================================== */
+/* ============================================================================================ */
+
+.section-1 {
+  padding-top:8vh;
+  z-index:5;
+  position:relative;
+	text-align:center;
+}
+
+.hero-fill {
+  background-image: url('../assets/hero-bg.png');
+  background-position: bottom center;
+  background-size: 100% auto;
+  background-repeat:no-repeat;
+  height: 100vh;
+  border-top:16px #5ec2a5 solid;
+}
+
+.cta-button-dark {
+  padding: 15px;
+  margin: 5px 10px;
+  display: inline-block;
+  background-color: #ffb980;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: background-color .2s ease-in-out;
+       -o-transition: background-color .2s ease-in-out;
+          transition: background-color .2s ease-in-out;
+}
+
+.cta-button-light {
+  padding: 15px;
+  margin: 5px 10px;
+  display: inline-block;
+  color: #75cfec;
+  border: 2px solid #75cfec;
+  background-color:#fff;
+  border-radius: 999px;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: background-color .2s ease-in-out;
+       -o-transition: background-color .2s ease-in-out;
+          transition: background-color .2s ease-in-out;
+}
+
+.cta-button-blue {
+  padding: 15px;
+  margin: 5px 10px;
+  display: inline-block;
+  color: #fff;
+  background-color:#74cfed;
+  border-radius: 999px;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: background-color .2s ease-in-out;
+       -o-transition: background-color .2s ease-in-out;
+          transition: background-color .2s ease-in-out;
+}
+
+.cta-button-light:hover {
+  background-color:#75cfec;
+  color:#fff;
+}
+
+.cta-button-dark:hover {
+  background-color:#ffaa65;
+}
+
+.cta-button-blue:hover {
+  background-color:#48c6f0;
+}
+
+/* .button-container {
+	margin-top:10px;
+	position:absolute;
+	bottom:50px;
+	margin:0 auto;
+	width:100%;
+	text-align:center;
+	z-index:4;
+} */
+
+.button-container {
+	margin-top:10px;
+	text-align:center;
+	width:100%;
+}
+
+.scroll-down {
+  background-image:url('../assets/down-arrow.png');
+  background-position:bottom center;
+  background-repeat:no-repeat;
+  background-size:25px 22.17px;
+  width:100%;
+  height:45px;
+  text-align:center;
+  color:#fff;
+  position:absolute;
+  font-weight:500;
+  bottom:10px;
+  margin:0 auto;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:15px; }
+  25%, 75% { bottom:25px; }
+  50%      { bottom:30px; }
+  100%     {bottom:10px;}
+}
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> intro-1 ============================================== */
+/* ============================================================================================ */
+
+#intro-1 {
+	background-color:#5ec2a5;
+	padding-bottom:60px;
+}
+
+#intro-1 .section-header {
+	margin-top:100px;
+	font-weight:300;
+	font-family:'Lato', Helvetica, sans-serif;
+}
+
+#intro-1 p {
+	color:#fff;
+	font-family:'Lato', Helvetica, sans-serif;
+	font-size:18pt;
+	font-weight:200;
+}
+
+@media (max-width:767px){
+	#intro-1 img {
+		margin-top:20px;
+	}
+	#intro-1 .section-header {
+		margin-top:0px;
+	}
+}
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> intro-2 ============================================== */
+/* ============================================================================================ */
+
+#intro-2 {
+	background-color:#74cfed;
+	padding: 60px 20px;
+}
+
+#intro-2 .section-header {
+	margin-top:100px;
+	font-weight:300;
+	font-family:'Lato', Helvetica, sans-serif;
+}
+
+#intro-2 p {
+	color:#fff;
+	font-family:'Lato', Helvetica, sans-serif;
+	font-size:18pt;
+	font-weight:200;
+}
+
+#intro-2 .cta-button-light:hover {
+  background-color:#74cfed;
+}
+
+@media (max-width:767px){
+	#intro-2 img {
+		margin-top:20px;
+	}
+	#intro-2 .section-header {
+		margin-top:0px;
+	}
+}
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> intro-3 ============================================== */
+/* ============================================================================================ */
+
+#intro-3 {
+	background-color:#63757a;
+	padding: 60px 20px;
+}
+
+#intro-3 .section-header {
+	margin-top:100px;
+	font-weight:300;
+	font-family:'Lato', Helvetica, sans-serif;
+}
+
+#intro-3 p {
+	color:#fff;
+	font-family:'Lato', Helvetica, sans-serif;
+	font-size:18pt;
+	font-weight:200;
+}
+
+@media (max-width:767px){
+	#intro-3 img {
+		margin-top:20px;
+	}
+	#intro-3 .section-header {
+		margin-top:0px;
+	}
+}
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> intro-4 ============================================== */
+/* ============================================================================================ */
+
+#intro-4 {
+	background-color:#fff;
+	padding: 60px 20px;
+}
+
+#intro-4 .section-header {
+	margin-top:100px;
+	font-weight:300;
+	font-family:'Lato', Helvetica, sans-serif;
+	color:#f36f4f;
+}
+
+#intro-4 p {
+	color:#636363;
+	font-family:'Lato', Helvetica, sans-serif;
+	font-size:18pt;
+	font-weight:200;
+}
+
+@media (max-width:767px){
+	#intro-4 img {
+		margin-top:20px;
+	}
+	#intro-4 .section-header {
+		margin-top:0px;
+	}
+}
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> contact ============================================== */
+/* ============================================================================================ */
+
+#contact {
+	background-color:#fbf6f8;
+	padding: 70px 20px;
+	-webkit-box-shadow: inset 0px 5px 3px 0px rgba(0, 0, 0, .07);
+	-moz-box-shadow:    inset 0px 5px 3px 0px rgba(0, 0, 0, .07);
+	box-shadow:         inset 0px 5px 3px 0px rgba(0, 0, 0, .07);
+	/* inset @x @y @blur @spread rgba(0, 0, 0, @alpha); */
+}
+
+#contact .section-header {
+	font-weight:300;
+	font-size:24pt;
+	font-family:'Lato', Helvetica, sans-serif;
+	color:#5ec2a5;
+	line-height:25pt;
+	margin:10px 0px 0px 0px;
+}
+
+#contact .cta-button-blue {
+	margin-top:15px;
+}
+
+#contact h2 {
+	color:#636363;
+	margin:0;
+	font-size:18pt;
+	line-height:20pt;
+	font-weight:500;
+}
+#contact p {
+	color:#636363;
+	font-family:'Lato', Helvetica, sans-serif;
+	font-size:18pt;
+	font-weight:200;
+}
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> footer ============================================== */
+/* ============================================================================================ */
+
+#footer {
+	background-color:#5ec2a5;
+	padding:60px;
+	color:#fff;
+}
+
+#footer a {
+	text-decoration:none;
+	color:#fff;
+}
+
+#footer h3 {
+	font-size:18pt;
+	font-weight:600;
+	font-family:'Lato', Helvetica, sans-serif;
+	margin:0px;
+}
+
+@media (max-width:767px){
+	#footer h3 {
+		font-size:14pt;
+		font-weight:600;
+	}
+}
+
+#footer ul {
+	list-style-type: none;
+	margin:0px;
+}
+
+#footer .foot-border {
+	border-left:2px #fff solid;
+}
+
+@media (max-width:767px){
+#footer .foot-space {
+	margin-top:20px;
+}
+}
+
+#footer .brandmark-container {
+	text-align:right;
+}
+
+#footer p {
+	color:#fff;
+	font-family:'Lato', Helvetica, sans-serif;
+	font-size:11pt;
+	font-weight:400;
+}
+
+/** cloud animations **/
+
+.cloud {
+  width:109px;
+  height:auto;
+  z-index:3;
+  position:absolute;
+  opacity:.5;
+  -webkit-transition: all 150s ease-out;
+       -o-transition: all 150s ease-out;
+          transition: all 150s ease-out;
+}
+
+.hero-fill:hover .cloud-a {
+  left:150%;
+}
+
+.hero-fill:hover .cloud-b {
+  right:150%;
+}
+
+.hero-fill:hover .cloud-c {
+  right:150%;
+}
+
+.hero-fill:hover .cloud-d {
+  left:150%;
+}
+
+.hero-fill:hover .cloud-e {
+  right:150%;
+}
+
+.hero-fill:hover .cloud-f {
+  right:150%;
+}
+
+
+.cloud-a {
+  left:16px;
+  top:275px;
+}
+
+.cloud-b {
+  right:18px;
+  top:220px;
+}
+
+.cloud-c {
+  right:100px;
+  top:50px;
+}
+
+.cloud-d {
+  left:-500px;
+  top:350px;
+}
+
+.cloud-e {
+  right:-200px;
+  top:125px;
+}
+
+.cloud-f {
+  right:-500px;
+  top:50px;
+}
