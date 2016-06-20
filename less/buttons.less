@@ -1,0 +1,92 @@
+// main ./main.less
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> buttons ============================================== */
+/* ============================================================================================ */
+
+
+.button-solid {
+  padding: 15px;
+  margin: 5px 10px;
+  display: inline-block;
+  border-radius: 999px;
+  font-size: @medium-font-size;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: background-color .2s ease-in-out;
+       -o-transition: background-color .2s ease-in-out;
+          transition: background-color .2s ease-in-out;
+	cursor:pointer;
+}
+
+.button-outline {
+  padding: 15px;
+  margin: 5px 10px;
+  display: inline-block;
+  border-radius: 999px;
+  font-size: @medium-font-size;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: background-color .2s ease-in-out;
+       -o-transition: background-color .2s ease-in-out;
+          transition: background-color .2s ease-in-out;
+	cursor:pointer;
+}
+
+.button-outline-blue {
+  color: @skyblue;
+  border: 2px solid @skyblue;
+  background-color:fade(@skyblue, 0%);
+  &:hover {
+    background-color:fade(@skyblue, 100%);;
+    color:@white;
+  }
+}
+
+.button-solid-orange {
+  background-color: @light-orange;
+  color: @white;
+  &:hover {
+    background-color:darken(@light-orange,7);
+    color:@white;
+  }
+  &:focus {
+    color:@white;
+  }
+  &:visited {
+    color:@white;
+  }
+  &:active {
+    color:@white;
+  }
+}
+
+.button-solid-blue {
+  background-color: @skyblue;
+  color: @white;
+  &:hover {
+    background-color:darken(@skyblue,10);
+  }
+}
+
+.modal-button {
+	padding: 25px;
+	display: inline-block;
+	color: @white;
+	font-weight:400 !important;
+	background-color:@light-orange;
+	border-radius: 0 0 6px 6px;
+	border:none;
+	width:100%;
+	font-size: @medium-font-size;
+	text-align: center;
+	font-weight: bold;
+	-webkit-transition: background-color .2s ease-in-out;
+			 -o-transition: background-color .2s ease-in-out;
+					transition: background-color .2s ease-in-out;
+  &:hover {
+    background-color:darken(@light-orange,7);
+  }
+}

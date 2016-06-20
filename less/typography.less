@@ -1,0 +1,54 @@
+// main: ./main.less
+
+@body-font:"Open Sans", "Helvetica", sans-serif !important;
+@header-font-large:42px;
+@header-font-small:29px;
+@input-font-size:22px;
+@default-font-size:20px;
+@medium-font-size:18px;
+@small-font-size:13px;
+@tiny-font-size:10px;
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> text styling ============================================== */
+/* ============================================================================================ */
+
+h2 {
+  margin:0;
+  font-size:@medium-font-size;
+  line-height:20pt;
+  font-weight:500;
+}
+
+h3 {
+	font-size:@medium-font-size;
+	font-weight:600;
+	font-family:@body-font;
+	margin:0px;
+  @media (max-width:767px){
+  	font-size:14pt;
+  	font-weight:600;
+  }
+}
+
+.section-header {
+  font-weight:100;
+  font-size: @header-font-large;
+  @media (max-width:767px){
+    font-size: @header-font-small;
+  	font-weight:400;
+  }
+}
+
+.section-type {
+	font-size:@default-font-size;
+  @media (max-width:767px){
+	   font-weight:400;
+   }
+}
+
+p {
+  font-family:@body-font;
+  font-size:@medium-font-size;
+  font-weight:200;
+}

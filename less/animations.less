@@ -1,0 +1,154 @@
+// main ./main.less
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> cloud-animations ============================================== */
+/* ============================================================================================ */
+
+.cloud {
+  width:109px;
+  height:auto;
+  z-index:3;
+  position:absolute;
+  opacity:.5;
+  -webkit-transition: all 150s ease-out;
+       -o-transition: all 150s ease-out;
+          transition: all 150s ease-out;
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+      display:none;
+    }
+}
+
+.hero-fill:hover .cloud-a {
+  left:150%;
+}
+
+.hero-fill:hover .cloud-b {
+  right:150%;
+}
+
+.hero-fill:hover .cloud-c {
+  right:150%;
+}
+
+.hero-fill:hover .cloud-d {
+  left:150%;
+}
+
+.hero-fill:hover .cloud-e {
+  right:150%;
+}
+
+.hero-fill:hover .cloud-f {
+  right:150%;
+}
+
+
+.cloud-a {
+  left:16px;
+  top:275px;
+}
+
+.cloud-b {
+  right:18px;
+  top:220px;
+}
+
+.cloud-c {
+  right:100px;
+  top:50px;
+}
+
+.cloud-d {
+  left:-500px;
+  top:350px;
+}
+
+.cloud-e {
+  right:-200px;
+  top:125px;
+}
+
+.cloud-f {
+  right:-500px;
+  top:50px;
+}
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> scroll-down arrow ============================================== */
+/* ============================================================================================ */
+
+/* .scroll-down {
+  display:none;
+  background-image:url('../assets/down-arrow.png');
+  background-position:bottom center;
+  background-repeat:no-repeat;
+  background-size:25px 22.17px;
+  width:100%;
+  height:45px;
+  text-align:center;
+  color:@white;
+  position:absolute;
+  font-weight:500;
+  bottom:10px;
+  margin:0 auto;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:15px; }
+  25%, 75% { bottom:25px; }
+  50%      { bottom:30px; }
+  100%     {bottom:10px;}
+} */
+
+
+/* ============================================================================================ */
+/* >>>>>>>>>>>>> rise ============================================== */
+/* ============================================================================================ */
+
+.rise {
+    -webkit-animation: rise 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: rise 1s; /* Firefox < 16 */
+        -ms-animation: rise 1s; /* Internet Explorer */
+         -o-animation: rise 1s; /* Opera < 12.1 */
+            animation: rise 1s;
+    @media (max-width:767px) {
+      -webkit-animation: rise 0s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: rise 0s; /* Firefox < 16 */
+          -ms-animation: rise 0s; /* Internet Explorer */
+           -o-animation: rise 0s; /* Opera < 12.1 */
+              animation: rise 0s;
+            }
+}
+
+@keyframes rise {
+    from { bottom: -60px; }
+    to   { bottom: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes rise {
+    from { bottom: -60px; }
+    to   { bottom: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes rise {
+    from { bottom: -60px; }
+    to   { bottom: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes rise {
+    from { bottom: -60px; }
+    to   { bottom: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes rise {
+    from { bottom: -60px; }
+    to   { bottom: 0; }
+}
